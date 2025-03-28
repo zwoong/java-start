@@ -14,13 +14,15 @@ public class ScannerWhileEx3 {
         while (true) {
             int number = input.nextInt();
             if (number == -1) {
-                double average = (double) sum / count;
-                System.out.println("입력한 숫자들의 평균: " + average);
                 break;
             }
             sum += number;
             count++;
         }
+
+        double average = (double) sum / count;
+        System.out.println("입력한 숫자들의 합계: " + sum);
+        System.out.println("입력한 숫자들의 평균: " + average);
 
     }
 }
