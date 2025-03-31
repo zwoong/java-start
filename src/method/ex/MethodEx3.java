@@ -4,10 +4,12 @@ public class MethodEx3 {
     public static void main(String[] args) {
         int balance = 10000;
 
+        // 임금 1000
         int deposiAmount = 1000;
         balance += deposiAmount;
         System.out.println(deposiAmount + "원을 입금하였습니다. 현재 잔액: " + balance + "원");
 
+        // 출금 2000
         int withdrawAmount = 2000;
         if (balance >= withdrawAmount) {
             balance -= withdrawAmount;
